@@ -6,7 +6,6 @@ import org.mybatis.spring.SqlSessionTemplate;
 import java.util.List;
 
 public class UserMapperImpl implements UserMapper{
-
     private SqlSessionTemplate sqlSessionTemplate;
 
     public void setSqlSessionTemplate(SqlSessionTemplate sqlSessionTemplate) {
@@ -14,7 +13,7 @@ public class UserMapperImpl implements UserMapper{
     }
 
     @Override
-    public List<User> selectUser() {
-        return sqlSessionTemplate.getMapper(UserMapper.class).selectUser();
+    public User checkUserByName(String username) {
+        return sqlSessionTemplate.getMapper(UserMapper.class).checkUserByName(username);
     }
 }

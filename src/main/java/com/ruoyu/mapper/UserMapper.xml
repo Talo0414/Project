@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ruoyu.mapper.UserMapper">
-    <select id="selectUser" resultType="com.ruoyu.pojo.User">
-        select * from tab_user;
+    <select id="checkUserByName" parameterType="String" resultType="com.ruoyu.pojo.User">
+        select * from tab_user where username = #{username};
     </select>
 </mapper>
