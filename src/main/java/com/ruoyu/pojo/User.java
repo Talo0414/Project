@@ -2,6 +2,14 @@ package com.ruoyu.pojo;
 
 import org.springframework.stereotype.Component;
 
+/*
+create table tab_inventory(
+    uid int primary key ,
+    username varchar(20),
+	password varchar(20)
+);
+ */
+//用户表实体类
 @Component
 public class User {
     private int id;
