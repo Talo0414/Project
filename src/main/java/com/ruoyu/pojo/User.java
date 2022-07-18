@@ -12,7 +12,7 @@ create table tab_inventory(
 //用户表实体类
 @Component
 public class User {
-    private int id;
+    private int uid;
     private String username;
     private String password;
 
@@ -27,7 +27,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
+                "id=" + uid +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';
