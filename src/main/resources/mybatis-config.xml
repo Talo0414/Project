@@ -9,4 +9,13 @@
         <setting name="logImpl" value="STDOUT_LOGGING"/>
     </settings>
 
+    <typeAliases>
+        <package name="com.ruoyu.pojo"/>
+    </typeAliases>
+
+    <mappers>
+        <mapper class="com.ruoyu.mapper.UserMapper"/>
+        <mapper class="com.ruoyu.mapper.InventoryMapper"/>
+    </mappers>
+
 </configuration>
